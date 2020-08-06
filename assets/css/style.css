@@ -411,10 +411,9 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
+ 
   background: url("../img/hero-bg.jpg") top right;
-  background-size: cover;
+ 
 }
 
 #hero .container {
@@ -433,11 +432,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: silver;
+  color: #C0C0C0;
 }
 
 #hero h2 {
-  color: silver;
+  color: #C0C0C0;
   margin: 10px 0 0 0;
   font-size: 22px;
 }
