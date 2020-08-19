@@ -12,6 +12,15 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
+h7{
+color: orange;
+font-family: "Raleway", sans-serif;
+font-size:20px;
+}
+h7:hover {
+  color:#FF8C00 ;
+  text-decoration: none;
+}
 
 a {
   color: #34b7a7;
