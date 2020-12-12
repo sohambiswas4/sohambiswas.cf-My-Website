@@ -65,10 +65,42 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+ <section id="hero" class="d-flex align-items-center">
     <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
       <h1>Soham Biswas</h1>
-      <h2>welcome to my portfolio</h2>
+	<h2></h2>
+<h2></h2>
+<h2></h2>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+p.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid white;
+    font-size: 180%;
+    color: #A9A9A9;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+p.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+</style>
+
+      <p class="line-1 anim-typewriter">welcome to my portfolio</p>
     </div>
   </section><!-- End Hero -->
 
