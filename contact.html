@@ -48,7 +48,6 @@
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li><a href="index">Home</a></li>
-          <li><a href="about">About</a></li>
           <li><a href="resume">Resume</a></li>
           <li><a href="services">SIH 2020</a></li>
           <li class="active"><a href="contact">Contact</a></li>
@@ -74,13 +73,118 @@
 
         <div class="section-title">
           <h2 style="color:#C0C0C0">Contact</h2>
-          <p>-------</p>
-           <p>-------</p>
-            <p>-------</p>
+         
            
         </div>
 
-       
+       <pre id="typewriter">
+<span class="var-highlight">def main():</span>
+    <span class="string-highlight">print("Software engineer and Web Developer")</span>,
+    <span class="string-highlight">return(0)</span>,</pre>
+<style>.var-highlight{
+  color: white;
+}
+.string-highlight{
+  color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter{
+    font-size: 1.5em;
+    margin: 0;
+    font-family: "Courier New";
+
+    &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}</style>
+<script>
+function setupTypewriter(t) {
+      var HTML = t.innerHTML;
+
+      t.innerHTML = "";
+
+      var cursorPosition = 0,
+          tag = "",
+          writingTag = false,
+          tagOpen = false,
+          typeSpeed = 100,
+        tempTypeSpeed = 0;
+
+      var type = function() {
+        
+          if (writingTag === true) {
+              tag += HTML[cursorPosition];
+          }
+
+          if (HTML[cursorPosition] === "<") {
+              tempTypeSpeed = 0;
+              if (tagOpen) {
+                  tagOpen = false;
+                  writingTag = true;
+              } else {
+                  tag = "";
+                  tagOpen = true;
+                  writingTag = true;
+                  tag += HTML[cursorPosition];
+              }
+          }
+          if (!writingTag && tagOpen) {
+              tag.innerHTML += HTML[cursorPosition];
+          }
+          if (!writingTag && !tagOpen) {
+              if (HTML[cursorPosition] === " ") {
+                  tempTypeSpeed = 0;
+              }
+              else {
+                  tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+              }
+              t.innerHTML += HTML[cursorPosition];
+          }
+          if (writingTag === true && HTML[cursorPosition] === ">") {
+              tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+              writingTag = false;
+              if (tagOpen) {
+                  var newSpan = document.createElement("span");
+                  t.appendChild(newSpan);
+                  newSpan.innerHTML = tag;
+                  tag = newSpan.firstChild;
+              }
+          }
+
+          cursorPosition += 1;
+          if (cursorPosition < HTML.length - 1) {
+              setTimeout(type, tempTypeSpeed);
+          }
+
+      };
+
+      return {
+          type: type
+      };
+  }
+
+  var typer = document.getElementById('typewriter');
+
+  typewriter = setupTypewriter(typewriter);
+
+  typewriter.type();
+</script>
 
         <div class="row mt-5">
 
@@ -89,26 +193,16 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4 style="color:#C0C0C0">Home Address:</h4>
-                <p style="color:#C0C0C0">KALYANI,NADIA,WEST BENGAL,PIN: 741235</p>
+                <p style="color:#C0C0C0"> KALYANI , NADIA , WEST BENGAL , PIN: 741235 , India</p>
               </div>
 
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4 style="color:#C0C0C0">Email:</h4>
-                <p style="color:#C0C0C0">sohambiswas61@gmail.com</p>
-	        <p style="color:#C0C0C0">sohambiswas62@gmail.com</p>
+                <p style="color:#C0C0C0">soham_bt17@iiitkalyani.ac.in</p>
               </div>
 
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4 style="color:#C0C0C0">Call:</h4>
-                <p style="color:#C0C0C0">9432330377</p>
-              </div>
-<div class="phone">
-                <i class="icofont-brand-whatsapp"></i>
-                <h4 style="color:#C0C0C0">Whatsapp:</h4>
-                <p style="color:#C0C0C0">9432330377</p>
-              </div>
+              
 
             </div>
 
