@@ -1,9 +1,3 @@
-/**
-* Template Name: Kelly - v2.0.0
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -422,14 +416,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg1.jpg") top right;
+  background: url("../img/hero-bg.jpg") top right;
   background-size: cover;
 }
 
 #hero .container {
-  padding-top: 1.0px;
+  padding-top: 70px;
   position: relative;
-text-align: fixed;
 }
 
 @media (max-width: 992px) {
@@ -462,10 +455,9 @@ text-align: fixed;
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 10px;
+  margin-top: 30px;
   color: black;
   background: #34b7a7;
-text-align: fixed;
 }
 
 #hero .btn-about:hover {
