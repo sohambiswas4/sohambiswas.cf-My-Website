@@ -427,8 +427,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .container {
-  padding-top: 70px;
+  padding-top: 1.0px;
   position: relative;
+text-align: fixed;
 }
 
 @media (max-width: 992px) {
@@ -461,9 +462,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 30px;
+  margin-top: 10px;
   color: black;
   background: #34b7a7;
+text-align: fixed;
 }
 
 #hero .btn-about:hover {
