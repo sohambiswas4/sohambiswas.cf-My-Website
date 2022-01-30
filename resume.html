@@ -1,7 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+.light {
+    position: absolute;
+    width: 0px;
+    opacity: 1.75;
+    background-color: white;
+    box-shadow: #ffffff 0px 0px 20px 2px;
+    opacity: 110;
+    top: 100vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+.x1{
+  -webkit-animation: floatUp 4s infinite linear;
+  -moz-animation: floatUp 4s infinite linear;
+  -o-animation: floatUp 4s infinite linear;
+  animation: floatUp 4s infinite linear;
+   -webkit-transform: scale(1.0);
+   -moz-transform: scale(1.0);
+   -o-transform: scale(1.0);
+  transform: scale(1.0);
+}
+
+.x2{
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
+  left: 15%;
+}
+
+.x3{
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
+  -webkit-transform: scale(.5);
+  -moz-transform: scale(.5);
+  -o-transform: scale(.5);
+  transform: scale(.5);
+  left: -15%;
+}
+
+.x4{
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -34%;
+}
+
+.x5{
+  -webkit-animation: floatUp 8s infinite linear;
+  -moz-animation: floatUp 8s infinite linear;
+  -o-animation: floatUp 8s infinite linear;
+  animation: floatUp 8s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: -57%;
+}
+
+.x6{
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
+  animation: floatUp 3s infinite linear;
+  -webkit-transform: scale(.8);
+  -moz-transform: scale(.8);
+  -o-transform: scale(.8);
+  transform: scale(.8);
+  left: -81%;
+}
+
+.x7{
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: 37%;
+}
+
+.x8{
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
+  left: 62%;
+}
+
+.x9{
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  left: 85%;
+}
+.x10{
+  -webkit-animation: floatUp 4.8s infinite linear;
+  -moz-animation: floatUp 4.8s infinite linear;
+  -o-animation: floatUp 4.8s infinite linear;
+  animation: floatUp 4.8s infinite linear;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
+  left: 89%;
+}
+.x11{
+  -webkit-animation: floatUp 4.2s infinite linear;
+  -moz-animation: floatUp 4.2s infinite linear;
+  -o-animation: floatUp 4.2s infinite linear;
+  animation: floatUp 4.2s infinite linear;
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -o-transform: scale(0.2);
+  transform: scale(0.2);
+  right: 85%;
+}
+.x12{
+  -webkit-animation: floatUp 4.2s infinite linear;
+  -moz-animation: floatUp 4.2s infinite linear;
+  -o-animation: floatUp 4.2s infinite linear;
+  animation: floatUp 4.2s infinite linear;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  right: 95%;
+}
+.x13{
+  -webkit-animation: floatUp 4.2s infinite linear;
+  -moz-animation: floatUp 4.2s infinite linear;
+  -o-animation: floatUp 4.2s infinite linear;
+  animation: floatUp 4.2s infinite linear;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  left: 90%;
+}
+.x14{
+  -webkit-animation: floatUp 4.2s infinite linear;
+  -moz-animation: floatUp 4.2s infinite linear;
+  -o-animation: floatUp 4.2s infinite linear;
+  animation: floatUp 4.2s infinite linear;
+  -webkit-transform: scale(1.0);
+  -moz-transform: scale(1.0);
+  -o-transform: scale(1.0);
+  transform: scale(1.0);
+  left: 98%;
+}
+@-webkit-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-moz-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-o-keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@keyframes floatUp{
+  0%{top: 100vh; opacity: 0;}
+  25%{opacity: 1;}
+  50%{top: 0vh; opacity: .8;}
+  75%{opacity: 1;}
+  100%{top: -100vh; opacity: 0;}
+}
+@-webkit-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-moz-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-o-keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@keyframes fadeIn{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 0;}
+}
+
+@-moz-keyframes fadeOut{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 0;}
+}
+
+@-o-keyframes fadeOut{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 0;}
+}
+
+@keyframes fadeOut{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 0;}
+}
+
+@-webkit-keyframes finalFade{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes finalFade{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 1;}
+}
+
+@-o-keyframes finalFade{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 1;}
+}
+
+@keyframes finalFade{
+  0%{opacity: 0;}
+  30%{opacity: 1;}
+  80%{opacity: .9;}
+  100%{opacity: 1;}
+}
+.header11{
+  position: absolute;
+  font-size: 32px;
+  line-height: 1;
+  left= 10;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 2em;
+}
+
+#head1, #head2,#head3, #head4, #head5{
+  opacity: 0;
+}
+
+#head1{
+  -webkit-animation: fadeOut 1 5s ease-in;
+  -moz-animation: fadeOut 1 5s ease-in;
+  -o-animation: fadeOut 1 5s ease-in;
+  animation: fadeOut 1 5s ease-in;
+}
+
+#head2{
+  -webkit-animation: fadeOut 1 5s ease-in;
+  -moz-animation: fadeOut 1 5s ease-in;
+  -o-animation: fadeOut 1 5s ease-in;
+  animation: fadeOut 1 5s ease-in;
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+#head3{
+  -webkit-animation: fadeOut 1 5s ease-in;
+  -moz-animation: fadeOut 1 5s ease-in;
+  -o-animation: fadeOut 1 5s ease-in;
+  animation: fadeOut 1 5s ease-in;
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  -o-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+#head4{
+  -webkit-animation: fadeOut 3 5s ease-in;
+  -moz-animation: fadeOut 1 5s ease-in;
+  -o-animation: fadeOut 1 5s ease-in;
+  animation: fadeOut 1 5s ease-in;
+  -webkit-animation-delay: 17s;
+  -moz-animation-delay: 17s;
+  -o-animation-delay: 17s;
+  animation-delay: 17s;
+}
+
+#head5{
+  -webkit-animation: finalFade 1 5s ease-in;
+  -moz-animation: finalFade 1 5s ease-in;
+  -o-animation: finalFade 1 5s ease-in;
+  animation: finalFade 1 5s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 11s;
+  -moz-animation-delay: 11s;
+  -o-animation-delay: 11s;
+  animation-delay: 11s;
+}
+</style>
+
+
+
+
 <head>
+
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -35,6 +391,68 @@
   <header id="header" class="fixed-top">
     <div class="container-fluid d-flex justify-content-between align-items-center">
 
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+ <div class='light x1'></div>
+ <div class='light x1'></div>
+  <div class='light x2'></div>
+<div class='light x2'></div>
+  <div class='light x3'></div>
+<div class='light x3'></div>
+  <div class='light x4'></div>
+ <div class='light x4'></div>
+  <div class='light x5'></div>
+ <div class='light x5'></div>
+  <div class='light x6'></div>
+<div class='light x6'></div>
+ <div class='light x4'></div>
+  <div class='light x7'></div>
+ <div class='light x7'></div>
+
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x10'></div>
+  <div class='light x11'></div>
+<div class='light x11'></div>
+  <div class='light x12'></div>
+  <div class='light x13'></div>
+<div class='light x6'></div>
+<div class='light x6'></div>
+ <div class='light x10'></div>
+ <div class='light x10'></div>
+ <div class='light x12'></div>
+ <div class='light x12'></div>
+<div class='light x14'></div>
+<div class='light x14'></div>
+<div class='light x3'></div>
+
+
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x10'></div>
+
+<div class='light x11'></div>
+  <div class='light x12'></div>
+  <div class='light x13'></div>
+<div class='light x6'></div>
+<div class='light x6'></div>
+
+
+ <div class='light x12'></div>
+
+
+<div class='light x14'></div>
+<div class='light x3'></div>
+ <div class='light x12'></div>
+
+
+
+ 
+  <div class='light x7'></div>
+  <div class='light x8'></div>
+ 
+
       <h1 class="logo"><a href="index"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -43,7 +461,6 @@
         <ul>
           <li><a href="index">Home</a></li>
           <li class="active"><a href="resume">Resume</a></li>
-          <li><a href="services">SIH 2020</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -65,6 +482,29 @@
 
     <!-- ======= Resume Section ======= -->
     <section id="resume" class="resume">
+
+
+  <div class='light x8'></div>
+  <div class='light x9'></div>
+  <div class='light x10'></div>
+
+<div class='light x11'></div>
+  <div class='light x13'></div>
+<div class='light x6'></div>
+
+
+
+ <div class='light x12'></div>
+
+
+
+<div class='light x3'></div>
+<div class='light x14'></div>
+
+
+
+
+
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -79,7 +519,13 @@
         <div class="row">
           <div class="col-lg-6">
 <h1></h1>
-            <p class="line-1 anim-typewriter">Summary</p>
+
+
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+            <p style="color:white;font-size:24px;">Summery</p>
             <div class="resume-item pb-0">
               <h4 style="color:	#90EE90">Soham Biswas</h4>
               <p style="color:white"><em>A diligent, intellectual and capable Research Fellow. A confident presenter able to interpret complex information to any audiences.</em></p>
@@ -119,7 +565,7 @@ p.anim-typewriter{
 }
 </style>
 	
-            <p class="line-1 anim-typewriter">Education</p>
+            <p style="color:white;font-size:24px;">Education</p>
             <div class="resume-item">
               <h4 style="color:	#90EE90">B.Tech (Computer Science and Engineering)</h4>
               <h5>2017 - 2021</h5>
@@ -132,7 +578,7 @@ p.anim-typewriter{
             </div>
           </div>
           <div class="col-lg-6">
-             <p class="line-1 anim-typewriter">Achievements</p>
+             <p style="color:white;font-size:24px;">Achievements</p>
             <div class="resume-item">
               <h4 style="color:	#90EE90">IRJET International Journal</h4>
               <h5>2017</h5>
@@ -177,7 +623,7 @@ p.anim-typewriter1{
   to{border-right-color: transparent;}
 }
 </style>
-     <p class="line-2 anim-typewriter1">Work Experience</p>
+     <p style="color:white;font-size:24px;">Work Experience</p>
             <div class="resume-item">
               <h4 style="color:	#90EE90">Internship at Smart City Gwalior</h4>
               <h5>Jun 2019 - Aug 2019</h5>
