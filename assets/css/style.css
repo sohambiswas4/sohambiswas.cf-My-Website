@@ -1376,15 +1376,15 @@ background: black
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  padding: 30px 0;
+  padding: 0px 0;
   color: white;
-  font-size: 14px;
+  font-size: 0px;
   text-align: center;
 }
 
 #footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
+  padding-top: 0px;
+  font-size: 0px;
 }
 
 #footer .credits a {
